@@ -47,14 +47,23 @@ Data columns (total 7 columns):
  #   Column          Dtype 
 ---  ------          ----- 
  0   lsoa_code       object
+ ---  ------          ----- 
  1   borough         object
+ ---  ------          ----- 
  2   major_category  object
+ ---  ------          ----- 
  3   minor_category  object
+ ---  ------          ----- 
  4   value           int64 
+ ---  ------          ----- 
  5   year            int64 
+ ---  ------          ----- 
  6   month           int64 
+ ---  ------          ----- 
 dtypes: int64(3), object(4)
+---  ------          ----- 
 memory usage: 720.5+ MB
+---  ------          ----- 
 
 ```python
 london_crime.shape #(jumlah baris, kolom)
