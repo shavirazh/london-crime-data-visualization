@@ -21,7 +21,9 @@ london_crime = pd.read_csv("london_crime_by_lsoa.csv") #import data
 ```python```
 london_crime.head() #5 data pertama pada dataframe london_crime
 ```
-	lsoa_code	borough	major_category	minor_category	value	year	month
+
+	|lsoa_code|	|borough|	|major_category|	|minor_category|	|value|	|year|	|month|
+	-----------
 0	E01001116	Croydon	Burglary	Burglary in Other Buildings	0	2016	11
 1	E01001646	Greenwich	Violence Against the Person	Other violence	0	2016	11
 2	E01000677	Bromley	Violence Against the Person	Other violence	0	2015	5
