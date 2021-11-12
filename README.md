@@ -42,18 +42,22 @@ london_crime.tail() #5 data terakhir pada dataframe london_crime
 london_crime.info() #informasi tentang data type masing-masing kolom pada dataframe
 ```
 <class 'pandas.core.frame.DataFrame'>
+
 RangeIndex: 13490604 entries, 0 to 13490603
+
 Data columns (total 7 columns):
- #   Column          Dtype 
----  ------          ----- 
- 0.   lsoa_code       object 
- 1.   borough         object
- 2.   major_category  object
- 3.   minor_category  object
- 4.   value           int64 
- 5.   year            int64 
- 6.   month           int64 
+
+|    | Column         | Dtype  |
+|----|----------------|--------|
+| 0. | lsoa_code      | object |
+| 1. | borough        | object |
+| 2. | major_category | object |
+| 3. | minor_category | object |
+| 4. | value          | int64  |
+| 5. | year           | int64  |
+| 6. | month          | int64  |
 dtypes: int64(3), object(4)
+
 memory usage: 720.5+ MB
 
 ```python
@@ -64,10 +68,15 @@ london_crime.shape #(jumlah baris, kolom)
 Berdasarkan output dataframe london_crime di atas, dapat diketahui bahwa dataframe terdiri dari 13490604 baris/observasi dan 7 kolom/features, di mana kolom ini berisi informasi tentang berapa jumlah kriminal berdasarkan kategori mayor/minor yang tercatat di borough tertentu pada bulan dan tahun tertentu. Dengan detail sebagai berikut:
 
 borough: Common name for London borough.
+
 _major_category: High level categorization of crime._
+
 _minor_category: Low level categorization of crime within major category._
+
 value: monthly reported count of categorical crime in given borough.
+
 year: Year of reported counts, 2008-2016.
+
 month: Month of reported counts, 1-12.
 
 Selanjutnya, akan diketahui jumlah dan nama-nama borough, serta kategori kriminal mayor apa saja yang ada dalam data.
@@ -100,14 +109,15 @@ Selanjutnya, akan dilakukan pengecekan apakah ada missing values pada dataframe 
 ```python
 london_crime.isnull().sum()
 ```
-lsoa_code         0
-borough           0
-major_category    0
-minor_category    0
-value             0
-year              0
-month             0
-dtype: int64
+| lsoa_code      | 0 |
+|----------------|---|
+| borough        | 0 |
+| major_category | 0 |
+| minor_category | 0 |
+| value          | 0 |
+| year           | 0 |
+| month          | 0 |
+| dtype: int64   |   |
 
 
 Karena tidak terdapat missing values pada data, maka dapat dilakukan proses visualisasi dengan Line Plot, Histogram, dan lain-lain. Hasil visualisasi beserta interpretasinya dilampirkan pada tabel berikut:
