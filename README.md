@@ -105,7 +105,7 @@ Jumlah kriminal kategori mayor yang tercatat: 9
  'Criminal Damage' 'Drugs' 'Fraud or Forgery' 'Other Notifiable Offences'
  'Sexual Offences'
  
- ---
+
 Berdasarkan output di atas, diketahui terdapat 33 borough atau wilayah metropolitan di London dan terdapat 9 jenis kriminal dengan kategori mayor.
 
 ---
@@ -135,3 +135,13 @@ Karena tidak terdapat missing values pada data, maka dapat dilakukan proses visu
 | [Box Plot](https://github.com/shavirazh/london-crime-data-visualization/blob/main/PYTN_Assgn_1_KS03_ShaviraZhalsabilla/Box-Plot.ipynb)     |
 | [Scatterplot](https://github.com/shavirazh/london-crime-data-visualization/blob/main/PYTN_Assgn_1_KS03_ShaviraZhalsabilla/Scatterplot.ipynb)  |
 | [Follium Maps](https://github.com/shavirazh/london-crime-data-visualization/blob/main/PYTN_Assgn_1_KS03_ShaviraZhalsabilla/Follium-Maps.ipynb) |
+
+## Project Conclusions
+
+Visualisasi pada data London Crime menggunakan library `matplotlib.pyplot`. Menggunakan berbagai teknik visualisasi, kita dapat mendapatkan informasi mengenai jumlah kasus kejahatan/kriminal yang ada di London tahun 2008-2016, antara lain:
+
+1. Jumlah kasus kejahatan/kriminal di London pada tahun 2008-2016 berkisar di angka 700.000 kasus.
+2. Westminster adalah wilayah metropolitan di London yang memiliki jumlah kasus kejahatan/kriminal tertinggi dan jumlah kasusnya memiliki perbedaan yang sangat signifikan terhadap jumlah kasus di wilayah lain. Sebaliknya, City of London adalah wilayah metropolitan dengan jumlah kasus kejahatan/kriminal terendah.
+3. Kategori Theft and Handling adalah kategori dengan jumlah kasus kejahatan/kriminal tertinggi dengan proporsi sekitar 29% dari semua kategori. Sebaliknya, kategori Sexual Offences dan Fraud or Forgery adalah kategori dengan jumlah kasus kejahatan/kriminal terendah dan kategorii ini hanya mencatat kasus di tahun 2008.
+4. Tren jumlah kasus kejahatan/kriminal di London tahun 2008-2016 tidak membentuk pola naik ataupun turun, tetapi dapat dilihat bahwa setiap 4 tahun sekali, jumlah kasus mengalami kenaikan.
+5. Jumlah kasus pada tahun 2008-2012 lebih tinggi dibanding jumlah kasus pada tahun 2012-2016. Artinya terdapat penurunan kasus walaupun tidak signifikan. Tetapi perlu menjadi perhatian dan evaluasi guna mengurangi jumlah kasus kejahatan/kriminal di tahun-tahun berikutnya.
