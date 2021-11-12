@@ -56,6 +56,7 @@ Data columns (total 7 columns):
 | 4. | value          | int64  |
 | 5. | year           | int64  |
 | 6. | month          | int64  |
+
 dtypes: int64(3), object(4)
 
 memory usage: 720.5+ MB
@@ -67,17 +68,17 @@ london_crime.shape #(jumlah baris, kolom)
 
 Berdasarkan output dataframe london_crime di atas, dapat diketahui bahwa dataframe terdiri dari 13490604 baris/observasi dan 7 kolom/features, di mana kolom ini berisi informasi tentang berapa jumlah kriminal berdasarkan kategori mayor/minor yang tercatat di borough tertentu pada bulan dan tahun tertentu. Dengan detail sebagai berikut:
 
-borough: Common name for London borough.
+`borough`: Common name for London borough.
 
-_major_category: High level categorization of crime._
+`_major_category`: High level categorization of crime._
 
-_minor_category: Low level categorization of crime within major category._
+`_minor_category`: Low level categorization of crime within major category._
 
-value: monthly reported count of categorical crime in given borough.
+`value`: monthly reported count of categorical crime in given borough.
 
-year: Year of reported counts, 2008-2016.
+`year`: Year of reported counts, 2008-2016.
 
-month: Month of reported counts, 1-12.
+`month`: Month of reported counts, 1-12.
 
 Selanjutnya, akan diketahui jumlah dan nama-nama borough, serta kategori kriminal mayor apa saja yang ada dalam data.
 
@@ -102,10 +103,10 @@ Jumlah kriminal kategori mayor yang tercatat: 9
 'Burglary' 'Violence Against the Person' 'Robbery' 'Theft and Handling'
  'Criminal Damage' 'Drugs' 'Fraud or Forgery' 'Other Notifiable Offences'
  'Sexual Offences'
- 
+ ---
 Berdasarkan output di atas, diketahui terdapat 33 borough atau wilayah metropolitan di London dan terdapat 9 jenis kriminal dengan kategori mayor.
 Selanjutnya, akan dilakukan pengecekan apakah ada missing values pada dataframe london_crime.
-
+---
 ```python
 london_crime.isnull().sum()
 ```
@@ -119,7 +120,7 @@ london_crime.isnull().sum()
 | month          | 0 |
 | dtype: int64   |   |
 
-
+---
 Karena tidak terdapat missing values pada data, maka dapat dilakukan proses visualisasi dengan Line Plot, Histogram, dan lain-lain. Hasil visualisasi beserta interpretasinya dilampirkan pada tabel berikut:
 | Plot Names   |
 |--------------|
