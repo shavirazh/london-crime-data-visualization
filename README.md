@@ -18,7 +18,7 @@ Berdasarkan _overview_ sebelumnya, diketahui bahwa data mengandung informasi ten
 ```python
 london_crime = pd.read_csv("london_crime_by_lsoa.csv") #import data
 ```
-```python```
+```python
 london_crime.head() #5 data pertama pada dataframe london_crime
 ```
 
