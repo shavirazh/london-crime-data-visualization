@@ -17,17 +17,15 @@ import follium
 Berdasarkan _overview_ sebelumnya, diketahui bahwa data mengandung informasi tentang kejahatan/kriminal di wilayah metropolitan utama London. Selanjutnya akan dilakukan data preparation/preprocessing guna memperoleh informasi baris/kolom, missing values pada data, dan lain-lain sebelum masuk ke tahap visualisasi.
 ```python
 london_crime = pd.read_csv("london_crime_by_lsoa.csv") #import data
-```
-```python
 london_crime.head() #5 data pertama pada dataframe london_crime
 ```
 
-	|lsoa_code|	|borough|	|major_category|	|minor_category|	|value|	|year|	|month|
-| ------------- |:-------------:| ------------- |:-------------:| -----:| ------------- |:-------------:| 
-|3	|E01003774|	|Redbridge|	|Burglary|	|Burglary in Other Buildings|	|0|	|2016|	|3|
-|0	|E01001116|	|Croydon|	|Burglary|	|Burglary in Other Buildings|	|0|	|2016|	|11|
-|1	|E01001646|	|Greenwich|	|Violence Against the Person|	|Other violence|	|0|	|2016|	|11|
-|2	|E01000677|	|Bromley|	|Violence |Against the Person|	|Other violence|	|0|	|2015|	|5|
-|3	|E01003774|	|Redbridge|	|Burglary|	|Burglary in Other Buildings|	|0|	|2016|	|3|
-|3	|E01003774|	|Redbridge|	|Burglary|	|Burglary in Other Buildings|	|0|	|2016|	|3|
-|4	|E01004563|	|Wandsworth|	|Robbery|	|Personal Property|	|0|	|2008|	|6|
+lsoa_code|	borough|	major_category|	minor_category|	value|	year|	|month
+--- | --- | ---| --- | --- | --- | --- |
+|3	|E01003774|	|Redbridge|	|Burglary|	|Burglary in Other Buildings|	|0|	|2016|	|3
+|0	|E01001116|	|Croydon|	|Burglary|	|Burglary in Other Buildings|	|0|	|2016|	|11
+|1	|E01001646|	|Greenwich|	|Violence Against the Person|	|Other violence|	|0|	|2016	|11
+|2	|E01000677|	|Bromley|	|Violence |Against the Person|	|Other violence|	|0|	|2015	|5
+|3	|E01003774|	|Redbridge|	|Burglary|	|Burglary in Other Buildings|	|0|	|2016|	|3
+|3	|E01003774|	|Redbridge|	|Burglary|	|Burglary in Other Buildings|	|0|	|2016|	|3
+|4	|E01004563|	|Wandsworth|	|Robbery|	|Personal Property|	|0|	|2008|	|6
