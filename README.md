@@ -80,6 +80,7 @@ Berdasarkan output dataframe london_crime di atas, dapat diketahui bahwa datafra
 
 `month`: Month of reported counts, 1-12.
 
+---
 Selanjutnya, akan diketahui jumlah dan nama-nama borough, serta kategori kriminal mayor apa saja yang ada dalam data.
 
 ```python
@@ -103,10 +104,12 @@ Jumlah kriminal kategori mayor yang tercatat: 9
 'Burglary' 'Violence Against the Person' 'Robbery' 'Theft and Handling'
  'Criminal Damage' 'Drugs' 'Fraud or Forgery' 'Other Notifiable Offences'
  'Sexual Offences'
+ 
  ---
 Berdasarkan output di atas, diketahui terdapat 33 borough atau wilayah metropolitan di London dan terdapat 9 jenis kriminal dengan kategori mayor.
-Selanjutnya, akan dilakukan pengecekan apakah ada missing values pada dataframe london_crime.
+
 ---
+Selanjutnya, akan dilakukan pengecekan apakah ada missing values pada dataframe london_crime.
 ```python
 london_crime.isnull().sum()
 ```
